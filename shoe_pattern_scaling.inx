@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+  <name>Escalar</name>
+  <id>org.inkscape.template.effect</id>
+  <param name="fromSize" type="int" appearance="minimal" gui-text="Escalar desde:" min="30" max="50">36</param>
+  <param name="toSize" type="int" appearance="minimal" gui-text="Escalar hasta:" min="30" max="50">42</param>
+  <param name="patternSize" type="int" appearance="minimal" gui-text="Talla patrón:" min="30" max="50">39</param>
+
+  <effect>
+    <effects-menu>
+      <submenu name="Patrones de calzado"/>
+    </effects-menu>
+  </effect>
+  <script>
+    <command location="inx" interpreter="python">shoe_pattern_scaling_extension.py</command>
+  </script>
+</inkscape-extension>
